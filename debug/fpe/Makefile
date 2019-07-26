@@ -27,13 +27,11 @@ executable: $(EXECUTABLES)
 
 all: objects executable
 
-segfault: add_array_segfault.e 
+comparision: comparision.e 
 
-dynamic: add_array_dynamic.e 
+division: division.e 
 
-static: add_array_static.e 
-
-nobugs: add_array_nobugs.e 
+square_root: square_root.e 
 
 %_c.o: %.c
 	$(CC) $(CFLAGS) -c $^ -o $@

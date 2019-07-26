@@ -1,8 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#define DIM 1039596
-
+#define DIM 103956 //103956
+/////////////////// 103871 
 
 int main(int argc, char *argv[])
 {
@@ -12,7 +12,6 @@ int main(int argc, char *argv[])
 #ifdef DEBUG
   char *errmsg;
 #endif
-
 
   a = (float *)malloc(sizeof(float)*mydim);
 #ifdef DEBUG
@@ -27,11 +26,13 @@ int main(int argc, char *argv[])
   for(i=0; i<mydim; i++)
     {
       a[i+1000] = a[i];
+printf("a = %f ,b = %i, c = %f  \n", a[i], i, a[i+1000]);
+
     }
 
-  printf("a = %f \n", a[0]);
+//printf("a = %f \n", a[0]);
 
-  free(a);
+//  free(a);
 #ifdef DEBUG
   free(errmsg);
 #endif

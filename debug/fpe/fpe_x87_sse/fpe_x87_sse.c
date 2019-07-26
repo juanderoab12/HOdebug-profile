@@ -1,9 +1,9 @@
-#ifndef _GNU_SOURCE
+//#ifndef _GNU_SOURCE
 #define _GNU_SOURCE
-#endif
-#ifndef _FENV_H
+//#endif
+//#ifndef _FENV_H
 #include <fenv.h>
-#endif
+//#endif
 
 #include "fpe_x87_sse.h"
 
